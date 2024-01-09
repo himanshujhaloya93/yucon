@@ -1,0 +1,50 @@
+.parallax-wrapper {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+#parallax {
+  position: relative;
+  background-image: url('/sites/default/files/2023-12/vennyucon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 100%;
+  @media (min-width: 992px) {
+    width: 75%;
+  }
+}
+
+@media (max-width: 992px) {
+  .text-parallax {
+    margin-bottom: 130px;
+  }
+}
+
+.text-parallax {
+  line-height: 30px;
+  margin-top: 30px;
+
+  .tagline {
+    color: $orange;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .headline {
+    color: $blue;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .cta {
+    margin-bottom: 30px;
+  }
+
+}
+

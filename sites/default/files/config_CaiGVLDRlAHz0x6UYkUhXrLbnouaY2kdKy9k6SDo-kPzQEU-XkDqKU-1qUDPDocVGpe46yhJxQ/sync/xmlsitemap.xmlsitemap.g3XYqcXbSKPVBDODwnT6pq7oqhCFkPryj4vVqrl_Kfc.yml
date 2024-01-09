@@ -1,0 +1,8 @@
+uuid: eaf3279d-559a-4a0c-b0c2-05e9eaf9b88d
+langcode: en
+status: true
+dependencies: {  }
+id: g3XYqcXbSKPVBDODwnT6pq7oqhCFkPryj4vVqrl_Kfc
+label: 'https://www.yucon.ch'
+context:
+  language: en

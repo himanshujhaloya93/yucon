@@ -1,0 +1,30 @@
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid px-4 d-flex align-items-center justify-content-between">
+      <a href="/" class="logo d-flex align-items-center">
+        <img src="/themes/custom/yucon/images/yucon_logo_small.png" alt ="Yucon Logo" width="109px" height="39px" />
+      </a>
+
+      <div id="mob-navbar" class="mob-navbar">
+        {{ drupal_menu('main') }}
+      </div>
+
+      <div class="contact-language-wrapper">
+        {{ drupal_block('language_block:language_interface', wrapper=false) }}
+        {% if language.id == "de" %}
+          <a data-anchor="#contact" class="cta">Kontakt</a>
+        {% elseif language.id == "en" %}
+          <a data-anchor="#contact" class="cta">Contact</a>
+        {% endif %}
+      </div>
+
+      <div class="search-iconwrap">
+        <a class="search-link" title="{{ 'Go to the search page'|t }}" href="{{ path('search.view') }}">
+          <span class="search-icon" aria-hidden="true">{% include active_theme_path() ~ '/images/search.svg' %}</span>
+          <span class="visually-hidden">{{ 'Search'|t }}</span>
+        </a>
+      </div>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide bi bi-x d-none"></i>
+    </div>
+  </header> 

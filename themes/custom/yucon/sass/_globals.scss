@@ -1,0 +1,103 @@
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-size: $body-text;
+  font-family: $main-font, sans-serif;
+  background: $dark-blue;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $main-font, sans-serif;
+}
+
+h1 {
+  font-size: $h1;
+}
+
+h2 {
+  font-size: $h2;
+}
+h3 {
+  font-size: $h3;
+}
+h4,
+h5,
+h6 {
+  font-size: $hx;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.icon-lg {
+  i {
+    font-size: 35px;
+    color: $blue;
+  }
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-fh {
+  height: 100vh;
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title {
+  font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: $blue;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.text-orange {
+  color: $orange;
+}
+
+.blue {
+  background-color: $blue;
+}
+
+.light-blue {
+  background-color: $light-blue-2;
+}
+
+
+.header {
+  .cta {
+    cursor: pointer;
+  }
+}

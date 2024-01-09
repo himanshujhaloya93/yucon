@@ -1,0 +1,114 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
+  padding: 120px 0;
+  z-index: 3;
+
+  .hero-content {
+    align-self: center;
+  }
+
+  .hero-graphics img{
+    max-width: 100%;
+  }
+
+  h2 {
+    margin: 0px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #384658;
+  }
+
+  blockquote {
+    padding-left: 20px;
+    font-size: 15px;
+    border-left: 2px solid $dark-blue;
+    margin: 20px 0px 40px 0px;
+    color: #9a9a9a;
+  }
+  blockquote:before {
+    content: "";
+  }
+  blockquote:after {
+    content: "";
+  }
+
+  .cta {
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all 0.5s ease 0s;
+    color: $white;
+    background: $blue;
+    margin-right: 15px;
+
+    &:hover {
+      background: $dark-blue;
+    }
+  }
+}
+
+.hero .container {
+  z-index: 1;
+}
+
+.hero:before {
+  position: absolute;
+  content: "";
+  background: rgba(27, 47, 69, 0.6);
+  inset: 0;
+}
+
+.hero:after {
+  position: absolute;
+  content: "";
+  width: 45%;
+  background: $light-grey;
+  top: 0;
+  bottom: 0;
+}
+
+.page-node-type-page {
+  #hero:after {
+    width: 55%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  blockquote {
+    width: 78%;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    h2 {
+      color: $white;
+      text-align: center;
+    }
+
+    blockquote {
+      border-left: 2px solid $blue;
+      color: $white;
+    }
+
+    .hero-content {
+        margin: 40px 0;
+    }
+  }
+
+  .hero:after {
+    display: none;
+  }
+
+  // .hero-graphics {
+  //     display: none;
+  // }
+}

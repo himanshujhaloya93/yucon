@@ -1,0 +1,19 @@
+<article{{ attributes.addClass(classes) }}>
+    <div class="page-content">
+        <div data-aos="zoom-in" class="page-header">
+            <div class="container-xl">
+                <span class="divider"></span>
+                <h1>{{ label }}</h1>
+
+            </div>    
+        </div>
+        <div class="container-xl">
+            <div class="row">
+                <div data-aos="zoom-in" class="page-summary">
+                    {{content.field_summary }}
+                </div>
+                {{ content.field_content }}
+            </div>
+        </div>
+    <div>
+</article>

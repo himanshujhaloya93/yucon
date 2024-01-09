@@ -1,0 +1,21 @@
+uuid: 98c40643-2279-49c9-ad18-d89b3b1e8c3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact.field_section_title
+    - paragraphs.paragraphs_type.contact
+id: paragraph.contact.default
+targetEntityType: paragraph
+bundle: contact
+mode: default
+content:
+  field_section_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

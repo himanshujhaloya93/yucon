@@ -1,0 +1,61 @@
+.contact-message-website-contact-form {
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+  background-color: $white;
+  border-radius: 25px;
+  padding: 40px;
+  margin-right: 100px;
+  margin-bottom: 60px;
+  box-shadow: 0px 0 30px rgba(55, 55, 63, 0.15);
+
+    .form-wrapper {
+      width: 100%;
+    }
+
+    .form-item__label {
+      display: none;
+    }
+    
+    .form-submit {
+      border: 0;
+      padding: 8px 20px;
+      transition: 0.4s;
+      border-radius: 6px;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .form-element {
+      margin-bottom: 10px;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: none;
+      font-size: $medium-text;
+      background-color: $white;
+      padding: 12px 15px;
+      border: 1px solid $dark-grey;
+      width: 100%;
+      color: $black;
+  
+      &:focus {
+        outline: 1px solid $light-blue;
+      }
+
+      &::placeholder {
+        color: $dark-grey;
+        opacity: 1; /* Firefox */
+      }
+
+    }
+
+    @media (max-width: 992px) {
+      margin: 0;
+    }
+
+  }
+
+  .contact-message-website-contact-form:focus {
+    border-color: rgb(134, 183, 254);
+    outline: 0px;
+  }

@@ -1,0 +1,29 @@
+# Main theme library.
+yucon_styles:
+  css:
+    theme:
+      css/main.css: {}
+      //cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css: {}
+
+yucon_interactions:
+  js:
+    js/yucon.js: {}
+    # js/bootstrap.bundle.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
+    - yucon/fullScroll
+
+fullScroll:
+  js:
+    js/fullScroll.js: {}
+
+slider:
+  js:
+    js/slider.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
+    - slick/base

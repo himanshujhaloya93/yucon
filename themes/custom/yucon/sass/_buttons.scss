@@ -1,0 +1,81 @@
+.cta {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 30px;
+    transition: all 0.5s ease 0s;
+    color: $white;
+    background: $blue;
+    margin-right: 15px;
+    text-decoration:none;
+    border: none;
+    font-family: $main-font;
+
+    &:hover {
+      background: $button-hover;
+      color: $white;
+    }
+  }
+
+  .cta-orange {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 30px;
+    transition: all 0.5s ease 0s;
+    color: $black;
+    background: $orange;
+    margin-right: 15px;
+    text-decoration:none;
+    border: none;
+    font-family: $main-font;
+
+    &:hover {
+      background: $button-hover;
+      color: $white;
+    }
+
+
+  }
+
+
+  .cta-small {
+    font-size: 13px;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: all 0.5s ease 0s;
+    color: $white;
+    background: $blue;
+    margin-right: 15px;
+    text-decoration:none;
+    font-family: $main-font;
+
+    &:hover {
+      background: $button-hover;
+      color: $white;
+    }  
+  }
+
+  .cta-video {
+    font-size: 16px;
+    transition: 0.5s;
+    margin-left: 25px;
+    color: $dark-blue;
+    font-weight: 600;
+    text-decoration:none;
+    font-family: $main-font;
+
+    i {
+      color: $blue;
+      font-size: 32px;
+      transition: 0.3s;
+      line-height: 0;
+      margin-right: 8px;
+    }
+    &:hover {
+      color: $blue;
+    } 
+  }

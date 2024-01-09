@@ -1,0 +1,20 @@
+{% if breadcrumb %}
+    <h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
+    <ul class="breadcrumbs">
+    {% for item in breadcrumb %}
+      <li>
+        {% if item.url %}
+          <a href="{{ item.url }}">{{ item.text }}</a>
+        {% else %}
+          {{ item.text }}
+        {% endif %}
+        /
+        {% if current_title %}
+        <span>
+            {{ current_title }}
+        </span>
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+{% endif %}

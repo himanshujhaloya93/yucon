@@ -1,0 +1,18 @@
+uuid: b8428920-f6f0-4dc9-af98-de0c28db8f13
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Featured content'
+type: featured_content
+description: 'Layout used for featured pages'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,23 @@
+<article class="featured-content ">
+    <div id="featured-hero" class="featured-content-header {% if content.field_image|render %} featured-hero-content-all {% endif %}">
+        {% if content.field_image|render %}
+            <div class="featured-hero-background">
+                {{ content.field_image }}
+            </div>
+        {% endif %}
+
+        <div class="featured-hero-content p-4">
+            <h1>{{ label }}</h1>
+
+            {% if content.field_tagline|render %}
+                <p>{{ content.field_tagline }}</p>
+            {% endif %}
+        </div>
+
+    </div>
+
+    <div class="px-4">
+        {{ content|without('label', 'field_tagline', 'field_summary', 'field_image') }}
+    </div>
+    
+</article>

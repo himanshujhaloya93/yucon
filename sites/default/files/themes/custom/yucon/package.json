@@ -1,0 +1,14 @@
+{
+  "name": "yucon",
+  "private": true,
+  "scripts": {
+    "livereload": "livereload --exclusions node_modules/ --exts 'css,js,twig,theme,apng,avif,gif,jpg,jpeg,jfif,pjpeg,pjp,png,svg,webp'"
+  },
+  "devDependencies": {
+    "livereload": "^0.9.3"
+  },
+  "dependencies": {
+    "mdb-ui-kit": "^7.1.0",
+    "rellax": "^1.12.1"
+  }
+}

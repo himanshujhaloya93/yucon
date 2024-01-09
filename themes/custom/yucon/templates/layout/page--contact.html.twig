@@ -1,0 +1,60 @@
+{% include '@yucon/partials/header.html.twig' %}
+  <main role="main">
+    <div class="visually-hidden"><a id="main-content" tabindex="-1"></a></div>
+        <section class="section contact">
+            <div class="container-xxl mt-5">
+                <div class="mb-3">
+                <iframe title="addressMapIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39250.86189607918!2d8.485407704727935!3d47.365089258144174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4790098aff1cb05f%3A0x5f6ba2f85cc9c13a!2sIm%20Tiergarten%2011%2C%208055%20Z%C3%BCrich%2C%20Switzerland!5e0!3m2!1sen!2suk!4v1702946603345!5m2!1sen!2suk" style="border:0; width: 100%; height: 350px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="row mt-3 gy-4">
+                    <div class="col-md-6">
+                        <div class="info-item  d-flex align-items-center">
+                            <i class="icon bi bi-map flex-shrink-0"></i>
+                            <div>
+                                <h3>{{ 'Address'|t }}</h3>
+                                <p>Im Tiergarten 11, CH-8055, Zurich</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-item d-flex align-items-center">
+                            <i class="icon bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3>{{ 'Email'|t }}</h3>
+                                <p>thomas@yucon.ch</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-item  d-flex align-items-center">
+                            <i class="icon bi bi-telephone flex-shrink-0"></i>
+                            <div>
+                                <h3>{{ 'Phone'|t }}</h3>
+                                <p>079 632 80 01</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-item  d-flex align-items-center">
+                            <a href="https://www.linkedin.com/in/thomas-weber-zürich"><i class="icon bi bi-linkedin flex-shrink-0"></i></a>
+                            <div>
+                                <h3>{{ 'LinkedIn'|t }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">   
+                        {{ drupal_entity_form('contact_message', values={contact_form: 'website_contact'}) }}
+                    </div> 
+                </div>
+        
+            </div>
+        </section>
+    </div>
+  </main>
+{% include '@yucon/partials/footer.html.twig' %}
+
+
+
+

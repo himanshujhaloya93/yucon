@@ -1,0 +1,23 @@
+uuid: a63b9b01-601c-4d3d-a36f-2a76844fdaea
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - yucon
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: yucon_search_form_narrow
+theme: yucon
+region: primary_menu
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

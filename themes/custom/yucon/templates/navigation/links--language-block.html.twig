@@ -1,0 +1,19 @@
+{% if links -%}
+<div class="language-switcher drop">
+  <a href="">
+    <i class="bi bi-globe-americas">
+      {% if active_lang -%}
+        <span>{{ active_lang }}</span>
+      {%- endif %}
+    </i>
+  </a>
+
+  <ul class="drop">
+    {%- for item in links -%}
+      <li>
+          {{ item.link }} 
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>
+{%- endif %}

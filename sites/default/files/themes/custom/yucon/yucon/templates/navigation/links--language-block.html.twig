@@ -1,0 +1,9 @@
+{% if links -%}
+  <ul class="language-switcher">
+    {%- for item in links -%}
+      <li>
+          {{ item.link }} 
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif %}

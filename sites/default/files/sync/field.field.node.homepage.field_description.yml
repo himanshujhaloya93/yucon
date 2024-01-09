@@ -1,0 +1,19 @@
+uuid: f058f8d2-ff35-4641-b3db-3c0260b168b9
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.homepage
+id: node.homepage.field_description
+field_name: field_description
+entity_type: node
+bundle: homepage
+label: description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

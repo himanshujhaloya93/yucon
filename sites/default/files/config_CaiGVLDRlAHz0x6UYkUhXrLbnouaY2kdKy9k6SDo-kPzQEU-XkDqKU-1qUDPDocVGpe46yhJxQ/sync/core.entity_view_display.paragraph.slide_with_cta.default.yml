@@ -1,0 +1,45 @@
+uuid: 529a0a3e-8973-4006-b34c-34a6c2ce6a96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide_with_cta.field_heading
+    - field.field.paragraph.slide_with_cta.field_link
+    - field.field.paragraph.slide_with_cta.field_text
+    - paragraphs.paragraphs_type.slide_with_cta
+  module:
+    - link
+    - text
+id: paragraph.slide_with_cta.default
+targetEntityType: paragraph
+bundle: slide_with_cta
+mode: default
+content:
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

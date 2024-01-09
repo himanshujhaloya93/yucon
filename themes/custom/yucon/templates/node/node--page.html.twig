@@ -1,0 +1,18 @@
+<article{{ attributes.addClass(classes) }}>
+    <div class="page-content">
+        <div class="page-header">
+            <div class="container-fluid">
+                <span class="animate__animated animate__lightSpeedInLeft animate__fast divider"></span>
+                <h1 class="animate__animated animate__slideInDown animate__fast">{{ label }}</h1>
+            </div>    
+        </div>
+        {# <div class="container-xl">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-12 offset-0">
+                    <div class="animate__animated animate__slideInUp animate__fast page-summary">{{ content.field_summary }}</div>
+                </div>
+            </div>
+        </div> #}
+        {{ content.field_content }}
+    </div>
+</article>

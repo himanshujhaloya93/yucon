@@ -1,0 +1,10 @@
+uuid: 1d68f1c9-e02e-40a5-bee0-8f675c71f926
+langcode: en
+status: true
+dependencies: {  }
+id: slide_with_cta
+label: 'Slide with CTA'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

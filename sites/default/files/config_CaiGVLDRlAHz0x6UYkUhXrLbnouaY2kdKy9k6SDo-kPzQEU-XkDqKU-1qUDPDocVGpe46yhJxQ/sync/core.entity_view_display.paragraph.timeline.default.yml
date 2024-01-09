@@ -1,0 +1,30 @@
+uuid: 376d1520-112b-40e8-93a3-3e9b406fd623
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.timeline.field_job_text
+    - field.field.paragraph.timeline.field_job_year
+    - paragraphs.paragraphs_type.timeline
+id: paragraph.timeline.default
+targetEntityType: paragraph
+bundle: timeline
+mode: default
+content:
+  field_job_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_job_year:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,52 @@
+uuid: 7a3df986-5113-4256-8c4b-a0323f289586
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.homepage
+    - paragraphs.paragraphs_type.contact
+    - paragraphs.paragraphs_type.grid
+    - paragraphs.paragraphs_type.slide
+    - paragraphs.paragraphs_type.slide_with_cta
+  module:
+    - entity_reference_revisions
+id: node.homepage.field_components
+field_name: field_components
+entity_type: node
+bundle: homepage
+label: Components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slide: slide
+      slide_with_cta: slide_with_cta
+      grid: grid
+      contact: contact
+    negate: 0
+    target_bundles_drag_drop:
+      card_grid:
+        weight: 6
+        enabled: false
+      contact:
+        weight: 8
+        enabled: true
+      grid:
+        weight: 7
+        enabled: true
+      slide:
+        weight: 4
+        enabled: true
+      slide_with_cta:
+        weight: 5
+        enabled: true
+      text_and_image:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

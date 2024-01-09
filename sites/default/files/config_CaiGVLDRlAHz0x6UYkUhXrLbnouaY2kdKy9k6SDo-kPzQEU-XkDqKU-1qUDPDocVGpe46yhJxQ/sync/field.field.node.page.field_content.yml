@@ -1,0 +1,56 @@
+uuid: e818ce47-a3fa-482e-8ea3-e379974507ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.page
+    - paragraphs.paragraphs_type.grid
+    - paragraphs.paragraphs_type.text_and_image
+    - paragraphs.paragraphs_type.timeline_group
+  module:
+    - entity_reference_revisions
+id: node.page.field_content
+field_name: field_content
+entity_type: node
+bundle: page
+label: content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_and_image: text_and_image
+      grid: grid
+      timeline_group: timeline_group
+    negate: 0
+    target_bundles_drag_drop:
+      card_grid:
+        weight: 7
+        enabled: false
+      contact:
+        weight: 8
+        enabled: false
+      grid:
+        weight: 9
+        enabled: true
+      slide:
+        weight: 6
+        enabled: false
+      slide_with_cta:
+        weight: 11
+        enabled: false
+      text_and_image:
+        weight: 4
+        enabled: true
+      timeline:
+        weight: 8
+        enabled: false
+      timeline_group:
+        weight: 16
+        enabled: true
+field_type: entity_reference_revisions

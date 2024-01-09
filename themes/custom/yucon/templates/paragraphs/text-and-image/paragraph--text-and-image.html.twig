@@ -1,0 +1,42 @@
+
+<section class="animate__animated animate__slideInUp animate__fast info-card--bg text-and-image">
+
+    {% if content.field_image.0 and content.field_text|render %}
+        <div class="px-4">
+            <div class="info-card {% if paragraph.field_background.0.value|render %} {{ paragraph.field_background.0.value }} {% endif %}">
+                {% if content.field_heading|render %}
+                    <h2 class="{% if paragraph.field_image_position.0.value|render|trim  == 'left' %} text-align-left {% else %} text-align-right {% endif %}">
+                        {{ content.field_heading }}
+                    </h2>
+                {% endif %}
+
+                <div class="info-card--text {% if paragraph.field_image_position.0.value|render|trim  == 'left' %} order-1 {% endif %}">
+                    {{ content.field_text }}
+                </div>
+
+                <div class="info-card--image">
+                    {{content.field_image }}
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <div class="px-4 m-0 info-card {% if paragraph.field_background.0.value|render %} {{ paragraph.field_background.0.value }} {% endif %}">
+            {% if content.field_heading|render %}
+                <h2 class="{% if paragraph.field_image_position.0.value|render|trim  == 'left' %} text-align-left {% else %} text-align-right {% endif %}">
+                    {{ content.field_heading }}
+                </h2>
+            {% endif %}
+
+            {% if content.field_image.0 %}
+                <div class="my-4 col-12 text-align-center">
+                    {{ content.field_image }}
+                </div>
+            {% else %}
+                <div class="my-4 col-12">
+                    {{ content.field_text }}
+                </div>
+            {% endif %}   
+        </div>
+    {% endif %}        
+
+</section>

@@ -1,0 +1,19 @@
+uuid: 65203180-25da-4b48-8ca5-16725a187bcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.timeline_group
+id: paragraph.timeline_group.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: timeline_group
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

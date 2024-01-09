@@ -1,0 +1,40 @@
+{% import _self as menus %}
+
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    <nav> 
+      <ul>
+        {% for item in items %}
+          {% if item.below %}
+            <li class="drop">
+                <a aria-current="page" href={{ item.url }}>{{ item.title }}</a>
+              <ul>
+                {% for subitem in item.below %}
+                  <li><a href="{{ subitem.url }}">{{subitem.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% else %}
+            <li>
+              <a aria-current="page" href={{ item.url }}>{{ item.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+    </nav>
+  {% endif %}
+{% endmacro %}
+
+<div class="contact-language-wrapper mt-auto">
+  {{ drupal_block('language_block:language_interface', wrapper=false) }}
+
+  {% if lang_code == "de" %}
+    <a data-anchor="#contact" >Kontakt</a>
+  {% elseif lang_code == "en" %}
+    <a data-anchor="#contact" >Contact</a>
+  {% endif %}
+</div>

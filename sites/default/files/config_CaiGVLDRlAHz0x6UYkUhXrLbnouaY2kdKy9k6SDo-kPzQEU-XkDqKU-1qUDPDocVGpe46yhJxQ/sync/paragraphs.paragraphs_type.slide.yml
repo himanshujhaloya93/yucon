@@ -1,0 +1,10 @@
+uuid: 81d06746-5d2f-4ec4-8c59-8fa4164846ac
+langcode: en
+status: true
+dependencies: {  }
+id: slide
+label: 'Text and Parallax'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

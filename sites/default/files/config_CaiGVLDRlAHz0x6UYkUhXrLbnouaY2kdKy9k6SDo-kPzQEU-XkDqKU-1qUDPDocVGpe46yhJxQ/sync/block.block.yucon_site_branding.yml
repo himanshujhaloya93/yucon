@@ -1,0 +1,25 @@
+uuid: 53170697-dda9-4069-8ed8-b7d168ca5b1e
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - yucon
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: yucon_site_branding
+theme: yucon
+region: header
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

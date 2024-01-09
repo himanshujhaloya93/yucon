@@ -1,0 +1,206 @@
+.page-content {
+  padding-bottom: 60px;
+  .page-header {
+    padding-top: 240px;
+    padding-bottom: 240px;
+    margin-bottom: 50px;
+    background: url("/sites/default/files/2023-12/computer_0.jpg");
+    background-size: cover;
+    position: relative;
+  }
+
+  .page-summary {
+    margin: 20px 0;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .divider {
+    height: 4px;
+    width: 100%;
+    background-color: $white;
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  h1 {
+    display: inline-block;
+    line-height: 80px;
+    font-size: 80px;
+    color: $white;
+  }
+
+  @media (min-width: 992px) {
+    .page-summary {
+      margin: 70px 0;
+    }
+  }
+}
+
+.path-contact {
+
+  .contact-form {
+    padding: 50px 0;
+    
+    h2 {
+      padding: 0;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: $blue;
+    }
+
+    .info-item {
+      a {
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+    i {
+      font-size: 20px;
+      background: $blue;
+      color: #fff;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+      margin-right: 15px;
+      
+    }
+  }
+
+  }
+}
+
+#featured-hero {
+  padding-top: 82px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  .featured-hero-content {
+    color: $dark-blue-2;
+
+    h1 {
+      font-size: 180px;
+      font-weight: 900;
+      word-wrap: break-word;
+      word-break: break-word;
+    }
+
+    p { 
+      font-size: $body-text;
+    }
+  }
+
+  &.featured-hero-content-all {
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      background: $blue;
+      inset: 0;
+      opacity: 0.4;
+      z-index: 1;
+    }
+  
+    .featured-hero-background {
+      
+      .contextual-region {
+        position: static;
+      }
+  
+      .field__item > * {
+          object-fit: cover;
+          object-position: center;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+        }    
+    }
+  
+    .featured-hero-content {
+      position: relative;
+      z-index: 1;
+      width: 50%;
+      margin-right: auto;
+  
+      h1 {
+        color: $white;
+        font-size: 48px;
+        font-weight: 700;
+      }
+  
+      p { 
+        color: $white;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    &.featured-hero-content-all {
+      .featured-hero-content {
+        width: 100%;
+      }
+    }
+
+    .featured-hero-content {
+      h1 {
+        font-size: 48px;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  
+}
+
+@media screen and (min-width: 601px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+.page-content,
+.featured-content {
+
+  .field--name-field-view {
+    margin: 50px 0;
+
+    .viewsreference--view-title {
+      font-size: $h3;
+      font-weight: 700;
+      font-family: $main-font;
+      margin-bottom: 10px;
+    }  
+  }
+
+  .text-and-image > .px-4,
+  .grid-card > .px-4 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+
+  section {
+    &:not(:first-child):nth-child(odd) {
+      // background-color: $light-grey;
+      .info-card {
+        // flex-direction: row-reverse;
+      }
+    }
+  }
+}

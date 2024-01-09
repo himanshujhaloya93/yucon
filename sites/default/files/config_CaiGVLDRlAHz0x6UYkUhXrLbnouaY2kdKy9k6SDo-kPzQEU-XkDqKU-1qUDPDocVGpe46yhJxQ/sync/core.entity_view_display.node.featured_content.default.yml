@@ -1,0 +1,47 @@
+uuid: 37adc8c5-dd4c-41e7-b7a6-2a64a818dcef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.featured_content.field_page_components
+    - field.field.node.featured_content.field_summary
+    - field.field.node.featured_content.field_tagline
+    - node.type.featured_content
+  module:
+    - entity_reference_revisions
+    - user
+id: node.featured_content.default
+targetEntityType: node
+bundle: featured_content
+mode: default
+content:
+  field_page_components:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_summary:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_tagline:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  langcode: true

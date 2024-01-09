@@ -1,0 +1,32 @@
+.page-content {
+
+  margin-bottom: 60px;
+  .page-header {
+    padding: 130px 0;
+    margin-bottom: 50px;
+    background: url('/sites/default/files/2023-12/tech_0.jpg');
+    background-size: cover;
+    position: relative;
+  }
+
+  .page-summary {
+    margin: 70px 0;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .divider {
+    height: 4px;
+    width: 100%;
+    background-color: $white;
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  h1 {
+    display: inline-block;
+    line-height: 80px;
+    font-size: 80px;
+    color: $white;
+  }
+}

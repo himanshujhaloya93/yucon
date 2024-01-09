@@ -1,0 +1,55 @@
+uuid: c10511bb-e2c8-4cd1-823a-8cfaef4db120
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.website_contact
+    - field.field.contact_message.website_contact.field_message
+    - field.field.contact_message.website_contact.field_subject
+    - field.field.contact_message.website_contact.field_your_email
+    - field.field.contact_message.website_contact.field_your_name
+id: contact_message.website_contact.default
+targetEntityType: contact_message
+bundle: website_contact
+mode: default
+content:
+  field_subject:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: Subject
+    third_party_settings: {  }
+  field_your_email:
+    type: email_default
+    weight: 1
+    region: content
+    settings:
+      placeholder: 'Your email'
+      size: 60
+    third_party_settings: {  }
+  field_your_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Your name'
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 12
+      placeholder: Message
+    third_party_settings: {  }
+hidden:
+  copy: true
+  field_message: true
+  langcode: true
+  mail: true
+  name: true
+  preview: true
+  subject: true

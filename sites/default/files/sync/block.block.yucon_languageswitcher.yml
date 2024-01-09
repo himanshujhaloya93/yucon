@@ -1,0 +1,20 @@
+uuid: 7c79bdfe-d8a1-4431-9914-0f8aef962c15
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - language
+  theme:
+    - yucon
+id: yucon_languageswitcher
+theme: yucon
+region: primary_menu
+weight: -9
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility: {  }

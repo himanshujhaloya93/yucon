@@ -1,0 +1,28 @@
+{% set backgroundUrl = "background-image:url(" ~ file_url(node.field_hero_image.entity.fileuri) ~ ")" %}
+<section id="hero" style="{{ backgroundUrl }}" class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 hero-content"
+          data-aos="fade-up">
+          <h2>{{ content.field_headline }}</h2>
+          <blockquote class="aos-init aos-animate">
+            <p>{{ content.field_description }}</p>
+          </blockquote>
+          <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000" class="d-flex justify-content-center justify-content-lg-start">
+            <a href="/contact" class="cta">Get in touch</a>
+            <a href="https://yucon.ddev.site/sites/default/files/2023-12/yucon.mp4" class="cta-video d-flex align-items-center">
+              <i class="bi bi-play-circle"></i><span>Watch video</span>
+            </a>
+          </div>
+      </div>
+      <div class="col-xl-6 hero-graphics">
+        {% if language == "en-gb" %}
+          <img src="/yucon/themes/custom/yucon/images/graphics_en.png" alt="Graphics" />
+        {% endif %}
+        {% if language == "de" %}
+          <img src="/yucon/themes/custom/yucon/images/graphics_de.png" alt="Graphics" />
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

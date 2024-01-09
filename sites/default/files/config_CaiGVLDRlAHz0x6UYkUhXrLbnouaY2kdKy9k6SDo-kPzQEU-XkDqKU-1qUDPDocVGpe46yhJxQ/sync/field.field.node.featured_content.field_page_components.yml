@@ -1,0 +1,54 @@
+uuid: c0c87025-5b01-431e-ba0f-7b805f01b083
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_components
+    - node.type.featured_content
+    - paragraphs.paragraphs_type.grid
+    - paragraphs.paragraphs_type.text_and_image
+  module:
+    - entity_reference_revisions
+id: node.featured_content.field_page_components
+field_name: field_page_components
+entity_type: node
+bundle: featured_content
+label: 'Page components'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      grid: grid
+      text_and_image: text_and_image
+    negate: 0
+    target_bundles_drag_drop:
+      card_grid:
+        weight: 9
+        enabled: false
+      contact:
+        weight: 10
+        enabled: false
+      grid:
+        weight: 11
+        enabled: true
+      slide:
+        weight: 12
+        enabled: false
+      slide_with_cta:
+        weight: 13
+        enabled: false
+      text_and_image:
+        weight: 14
+        enabled: true
+      timeline:
+        weight: 15
+        enabled: false
+      timeline_group:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

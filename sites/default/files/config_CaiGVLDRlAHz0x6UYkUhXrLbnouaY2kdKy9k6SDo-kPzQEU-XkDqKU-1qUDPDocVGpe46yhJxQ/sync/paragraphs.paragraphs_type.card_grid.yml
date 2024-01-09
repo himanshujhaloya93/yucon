@@ -1,0 +1,10 @@
+uuid: 8ba6c794-1951-4e16-8471-9e89b30e9b0d
+langcode: en
+status: true
+dependencies: {  }
+id: card_grid
+label: 'Card grid'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

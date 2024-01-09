@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/de/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url><loc>https://www.yucon.ch/de</loc><changefreq>daily</changefreq><priority>1.0</priority><xhtml:link rel="alternate" hreflang="en" href="https://www.yucon.ch/en" /></url>
+<url><loc>https://www.yucon.ch/de/sap-beratung</loc><lastmod>2024-01-03T18:07Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://www.yucon.ch/de/node/24</loc><lastmod>2024-01-05T17:00Z</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+<url><loc>https://www.yucon.ch/de/referenzen</loc><lastmod>2024-01-04T19:26Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://www.yucon.ch/de/erfahrung</loc><lastmod>2024-01-04T17:45Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://www.yucon.ch/de/projektmanagement</loc><lastmod>2024-01-02T22:20Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://www.yucon.ch/de/anforderungsmanagement</loc><lastmod>2024-01-02T21:59Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://www.yucon.ch/de/agb</loc><lastmod>2023-12-22T18:39Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>https://www.yucon.ch/de/datenschutzerklaerung</loc><lastmod>2023-12-22T18:38Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>https://www.yucon.ch/de/impressum</loc><lastmod>2023-12-22T18:45Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>https://www.yucon.ch/de/benefits</loc><lastmod>2024-01-03T20:32Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://www.yucon.ch/de/blogs</loc><lastmod>2024-01-06T22:26Z</lastmod><changefreq>daily</changefreq></url>
+</urlset>

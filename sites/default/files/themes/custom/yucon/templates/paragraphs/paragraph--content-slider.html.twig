@@ -1,0 +1,27 @@
+{% if content.field_cover_title.0 %}
+  <section class="slider">
+    {{ content.field_cover_title }}
+  </section>
+{% endif %}
+
+{% for slide in slides %}
+  <section class="slider">
+    <div class="slider-content">
+      <p data-aos="fade-up">{{ slide.summary }}</p>
+      <span class="slider-divider"></span>
+      <h1>{{ slide.heading }}</h1>
+    </div>
+    {% set backgroundUrl = "background-image:url(" ~ file_url(paragraph.field_image.entity.field_media_image.entity.fileuri) ~ ")" %}
+    {% set graphicsUrl = file_url(paragraph.field_graphics.entity.field_media_image.entity.fileuri) %}
+    <div class="slider-image" style={{ backgroundUrl }}>
+      {% if graphicsUrl %}  
+        <img class="d-none d-md-block" src={{ graphicsUrl }} alt="Graphics" />
+      {% endif %}
+    </div>
+  </section>
+{% endfor %}
+
+
+
+
+ 

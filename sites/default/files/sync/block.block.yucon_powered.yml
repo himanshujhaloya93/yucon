@@ -1,0 +1,22 @@
+uuid: cb4ba405-0afe-4378-ba54-778691ebda48
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - yucon
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: yucon_powered
+theme: yucon
+region: header
+weight: -3
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

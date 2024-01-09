@@ -1,0 +1,19 @@
+uuid: fbb63d82-35f8-4385-b85b-cdc3e6dd5059
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_job_text
+    - paragraphs.paragraphs_type.timeline
+id: paragraph.timeline.field_job_text
+field_name: field_job_text
+entity_type: paragraph
+bundle: timeline
+label: 'Job text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

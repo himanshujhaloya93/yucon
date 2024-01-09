@@ -1,0 +1,23 @@
+<header id="header" class="header header--full d-flex">
+  <div class="container-fluid container-xl d-flex">
+    <a href="{{ path('<front>') }}" class="logo d-flex flex-grow-1">
+      <img src="/yucon/themes/custom/yucon/images/yucon_logo_small.png" alt ="Yucon Logo"/>
+    </a>
+    {{ drupal_block('language_block:language_interface', wrapper=false) }}
+    <div>
+      <div id="menu-trigger" onclick="toggleNavbar()" class="">
+        <span></span><span></span><span></span>
+      </div>
+      {{ drupal_menu('main') }}
+    </div>
+
+  </div>
+</header>
+<script>
+  function toggleNavbar() {
+    const navbar = document.getElementById('main-nav');
+    const menuTrigger = document.getElementById('menu-trigger');
+    navbar.classList.toggle('menu-open');
+    menuTrigger.classList.toggle('trigger-active');
+  }
+</script>

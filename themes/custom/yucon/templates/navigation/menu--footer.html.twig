@@ -1,0 +1,18 @@
+{% import _self as menus %}
+
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    <nav>
+      <ul>
+      {% for item in items %}
+        <li>
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    </nav>
+  {% endif %}
+{% endmacro %}

@@ -1,0 +1,81 @@
+.view-responsive-grid-wrapper {
+
+    .views-view-responsive-grid {
+        font-family: $main-font;
+        font-size: $body-text;
+        margin: 20px auto;
+    
+        .views-view-responsive-grid__item {
+            border: 1px solid #E8E8EA;
+            padding: 16px;
+            border-radius: 12px;
+    
+            .views-field-field-image {
+                margin-bottom: 15px;
+                text-align: center;
+    
+                img {
+                    border-radius: 12px;
+                }
+            }
+    
+            .views-field-field-post-type {
+                font-size: $medium-text;
+                font-weight: 600;
+                background-color: #C4D7E4;
+                width: fit-content;
+                padding: 4px 10px;
+                border-radius: 6px;
+                color: $blue;
+    
+                a {
+                    text-decoration: none;
+                    color: $blue;
+                }
+            }
+    
+            .views-field-title {
+                font-size: $h3;
+                font-weight: 700;
+                margin: 10px 0;
+    
+                a {
+                    color: $black;
+                    text-decoration: none;
+                }
+            }
+
+            .views-field-user-picture {
+                display: inline-block;
+                vertical-align: middle;
+
+                img {
+                    border-radius: 50%;
+                    width: 36px;
+                    height: 36px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .views-field-uid,
+            .views-field-created {
+                display: inline-block;
+                vertical-align: middle;
+                color: $dark-grey;
+                margin: 10px 0;
+
+                a {
+                    text-decoration: none;
+                    color: $dark-grey;
+                }
+            }
+
+            .views-field-uid {
+                margin: 15px;
+            }
+
+        }
+    }
+}
+

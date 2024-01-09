@@ -1,0 +1,19 @@
+uuid: 681175b3-f85d-451b-9106-61a6c5eeb09b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.slide_with_cta
+id: paragraph.slide_with_cta.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: slide_with_cta
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

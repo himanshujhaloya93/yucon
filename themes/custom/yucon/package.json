@@ -1,0 +1,29 @@
+{
+  "name": "yucon",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:css",
+    "livereload": "livereload --exclusions node_modules/ --exts 'scss,css,js,twig,theme,apng,avif,gif,jpg,jpeg,jfif,pjpeg,pjp,png,svg,webp'"
+  },
+  "devDependencies": {
+    "livereload": "^0.9.3",
+    "browser-sync": "^2.24.7",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-scss-lint": "^1.0.0",
+    "gulp-clean-css": "3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-postcss": "^8.0.0",
+    "gulp-uglify": "^3.0.0",
+    "merge-stream": "^1.0.1"
+  },
+  "dependencies": {
+    "mdb-ui-kit": "^7.1.0",
+    "rellax": "^1.12.1"
+  }
+}

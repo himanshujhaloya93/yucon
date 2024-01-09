@@ -1,0 +1,20 @@
+uuid: bdc50f75-32bb-4fca-a72d-095b6b149f74
+langcode: en-gb
+status: false
+dependencies:
+  theme:
+    - yucon
+id: yucon_tabs
+theme: yucon
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

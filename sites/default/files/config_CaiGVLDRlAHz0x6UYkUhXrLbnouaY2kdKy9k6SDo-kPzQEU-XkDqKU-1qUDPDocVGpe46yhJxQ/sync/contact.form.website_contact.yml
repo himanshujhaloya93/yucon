@@ -1,0 +1,12 @@
+uuid: 5ddf3d99-1533-4477-88fb-a05272bd63ca
+langcode: en
+status: true
+dependencies: {  }
+id: website_contact
+label: Contact
+recipients:
+  - carolinkrakow@gmail.com
+reply: ''
+weight: 0
+message: 'Thank you for your message!'
+redirect: ''
